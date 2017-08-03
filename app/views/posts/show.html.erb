@@ -1,0 +1,23 @@
+
+
+<p id="notice"><%= notice %></p>
+
+<p style="font-size: 30px">
+  <!-- <strong>Title:</strong> -->
+  <%= @post.title %>
+</p>
+
+<p style="font-size: 30px">
+  <!-- <strong>Author:</strong> -->
+  <%= @post.author %>
+</p>
+
+<p style="font-size: 16px">
+  <!-- <strong>Blog entry:</strong> -->
+  <%= @post.blog_entry %>
+</p>
+<p style="font-size: 16px">
+  <%= @post.created_at.strftime('%D - %r') %>
+</p>
+<%= link_to 'Edit', edit_post_path(@post) %> |
+<%= link_to 'Back', posts_path %>
